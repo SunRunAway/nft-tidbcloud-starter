@@ -1,0 +1,31 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+
+datasource db {
+  provider             = "mysql"
+  url                  = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
+
+model nft {
+  contract String @db.VarChar(255)
+  token_id String @db.VarChar(255)
+  metadata Json?
+  value    Int?
+
+  @@unique([contract, token_id], map: "token_contract")
+}
+
+model transaction {
+  id           Int       @id @default(autoincrement())
+  timestamp    DateTime? @default(now()) @db.DateTime(0)
+  block        Int
+  hash         String    @db.VarChar(255)
+  operator     String?   @db.VarChar(255)
+  from_address String    @db.VarChar(255)
+  to_address   String    @db.VarChar(255)
+  contract     String    @db.VarChar(255)
+  token_id     String    @db.VarChar(255)
+}
