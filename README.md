@@ -8,7 +8,7 @@ This is NFT [TiDB Cloud](https://tidbcloud.com/) Starter. It has two components:
 
 ## Set up the database
 
-1. Go to [TiDB Cloud](https://tidbcloud.com/), regiester a free account. 
+1. Go to [TiDB Cloud](https://tidbcloud.com/), register a free account. 
 2. Create a cluster(Free Developer Tier is ok for testing), and configure the password and IP Access List. 
 3. Click "connnect" and write your `DATABASE_URL="mysql://<username>:<password>@<host>:<port>/nft"`
 
