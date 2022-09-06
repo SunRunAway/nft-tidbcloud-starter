@@ -33,3 +33,6 @@ npm run dev
 ```
 
 Open your browser at [localhost:3000](localhost:3000) to see the running application.
+
+![image](https://user-images.githubusercontent.com/867381/188566472-8961f35d-b3bf-47e8-ae76-087fde115946.png)
+
