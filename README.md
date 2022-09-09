@@ -6,6 +6,10 @@ This is NFT [TiDB Cloud](https://tidbcloud.com/) Starter. It has two components:
 * app-with-tidbcloud
     * It is a website service that uses TiDB Cloud as the database for fetching hottest NFT colletions.
 
+## Demo
+
+https://nft-tidbcloud-starter.vercel.app/
+
 ## Set up the database
 
 1. Go to [TiDB Cloud](https://tidbcloud.com/), register a free account. 
@@ -34,5 +38,5 @@ npm run dev
 
 Open your browser at [localhost:3000](localhost:3000) to see the running application.
 
-![image](https://user-images.githubusercontent.com/867381/188566472-8961f35d-b3bf-47e8-ae76-087fde115946.png)
+![image](https://user-images.githubusercontent.com/867381/189272850-d8528076-f1d7-4a9e-852c-d27406d74576.png)
 
