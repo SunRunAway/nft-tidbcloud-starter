@@ -10,6 +10,8 @@ This is NFT [TiDB Cloud](https://tidbcloud.com/) Starter. It has two components:
 
 https://nft-tidbcloud-starter.vercel.app/
 
+![image](https://user-images.githubusercontent.com/867381/189273023-c3e40ad9-252d-433e-aba9-94362e6bc56f.png)
+
 ![image](https://user-images.githubusercontent.com/867381/189272850-d8528076-f1d7-4a9e-852c-d27406d74576.png)
 
 
