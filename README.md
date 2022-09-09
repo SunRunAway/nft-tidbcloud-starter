@@ -10,6 +10,9 @@ This is NFT [TiDB Cloud](https://tidbcloud.com/) Starter. It has two components:
 
 https://nft-tidbcloud-starter.vercel.app/
 
+![image](https://user-images.githubusercontent.com/867381/189272850-d8528076-f1d7-4a9e-852c-d27406d74576.png)
+
+
 ## Set up the database
 
 1. Go to [TiDB Cloud](https://tidbcloud.com/), register a free account. 
@@ -38,5 +41,4 @@ npm run dev
 
 Open your browser at [localhost:3000](localhost:3000) to see the running application.
 
-![image](https://user-images.githubusercontent.com/867381/189272850-d8528076-f1d7-4a9e-852c-d27406d74576.png)
 
