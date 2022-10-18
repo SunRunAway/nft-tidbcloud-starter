@@ -40,8 +40,8 @@ WITH hottest_transaction AS (
 ), collection AS (
     SELECT
         contract,
-        Any_value(Json_unquote(Json_extract(metadata, '$.name'))) AS collection_name,
-        Any_value(Json_unquote(Json_extract(metadata, '$.image'))) AS image
+	Any_value(Json_unquote(Json_extract(metadata, '$.name'))) AS collection_name,
+	Any_value(Json_unquote(Json_extract(metadata, '$.image'))) AS image
     FROM nft
     GROUP BY contract
 ),
@@ -54,7 +54,6 @@ hottest_collection AS (
     FROM hottest_transaction
     LEFT JOIN collection ON hottest_transaction.contract = collection.contract
     WHERE image is not NULL and TRIM(image) != ''
-    LIMIT 9
 )
 SELECT
     contract,
@@ -66,7 +65,7 @@ SELECT
         Concat("https://gateway.ipfs.io/ipfs/", Substr(image, 7)),
         image
     ) AS image
-FROM hottest_collection order by count desc;
+FROM hottest_collection order by count desc limit 9;
 `
 
   return {
