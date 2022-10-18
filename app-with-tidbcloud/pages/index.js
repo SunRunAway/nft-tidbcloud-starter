@@ -37,11 +37,11 @@ WITH hottest_transaction AS (
     FROM transaction
     GROUP BY contract
     ORDER BY count DESC
-    LIMIT 9
 ), collection AS (
     SELECT
         contract,
-        Any_value(metadata) AS metadata
+        Any_value(Json_unquote(Json_extract(metadata, '$.name'))) AS collection_name,
+        Any_value(Json_unquote(Json_extract(metadata, '$.image'))) AS image
     FROM nft
     GROUP BY contract
 ),
@@ -49,10 +49,12 @@ hottest_collection AS (
     SELECT
         hottest_transaction.contract,
         count,
-        Json_unquote(Json_extract(collection.metadata, '$.name')) AS collection_name,
-        Json_unquote(Json_extract(collection.metadata, '$.image')) AS image
+        collection_name,
+        image
     FROM hottest_transaction
     LEFT JOIN collection ON hottest_transaction.contract = collection.contract
+    WHERE image is not NULL and TRIM(image) != ''
+    LIMIT 9
 )
 SELECT
     contract,
