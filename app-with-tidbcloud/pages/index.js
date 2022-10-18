@@ -47,7 +47,7 @@ WITH hottest_transaction AS (
 ),
 hottest_collection AS (
     SELECT
-        collection.contract,
+        hottest_transaction.contract,
         count,
         Json_unquote(Json_extract(collection.metadata, '$.name')) AS collection_name,
         Json_unquote(Json_extract(collection.metadata, '$.image')) AS image
