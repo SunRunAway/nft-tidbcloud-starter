@@ -9,8 +9,7 @@ This is NFT [TiDB Cloud](https://tidbcloud.com/) Starter. It has two components:
 ## Demo
 
 https://nft-tidbcloud-starter.vercel.app/
-
-![image](https://user-images.githubusercontent.com/867381/189273023-c3e40ad9-252d-433e-aba9-94362e6bc56f.png)
+![image](https://user-images.githubusercontent.com/867381/196623940-07c8cfd3-dc46-41a0-a95c-9a95b490ed52.png)
 
 ![image](https://user-images.githubusercontent.com/867381/189272850-d8528076-f1d7-4a9e-852c-d27406d74576.png)
 
