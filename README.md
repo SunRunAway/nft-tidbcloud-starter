@@ -43,4 +43,8 @@ npm run dev
 
 Open your browser at [localhost:3000](localhost:3000) to see the running application.
 
+You can also Deploy with Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSunRunAway%2Fnft-tidbcloud-starter%2Ftree%2Fmain%2Fapp-with-tidbcloud&demo-title=NFT%20TiDB%20Cloud%20Starter&demo-description=https%3A%2F%2Fgithub.com%2FSunRunAway%2Fnft-tidbcloud-starter&demo-url=https%3A%2F%2Fnft-tidbcloud-starter.vercel.app%2F&integration-ids=oac_coKBVWCXNjJnCEth1zzKoF1j)
+
 
