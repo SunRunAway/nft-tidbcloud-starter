@@ -1,5 +1,7 @@
 # NFT TiDB Cloud Starter
 
+Related blog: [How to Choose the Right Database for Your NFT Marketplace](https://www.pingcap.com/blog/how-to-choose-the-right-database-for-your-nft-marketplace/)
+
 This is NFT [TiDB Cloud](https://tidbcloud.com/) Starter. It has two components:
 * subscriber
     * It is an backend service that subscribes to the blockchain and stores the data in TiDB Cloud.
